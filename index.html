@@ -490,6 +490,10 @@ background: #bfbdb5;
 @media (max-width: 768px) {
 body {
 padding: 10px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .header-logo img {
 max-height: 100px;
@@ -497,13 +501,14 @@ max-height: 100px;
 .card {
 margin: 10px 0;
 padding: 0;
-width: 100%;
-max-width: 100%;
+width: calc(100vw - 20px);
+max-width: calc(100vw - 20px);
 }
 .grid {
 gap: 3px;
 width: 100%;
 max-width: 100%;
+margin: 0 auto;
 }
 .cell {
 padding: 4px;
@@ -511,6 +516,7 @@ min-height: 60px;
 }
 .toc {
 padding: 10px;
+width: 100%;
 }
 .toc a {
 margin: 3px;
